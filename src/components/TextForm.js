@@ -30,9 +30,7 @@ export default function TextForm(props) {
         window.speechSynthesis.speak(msg);
     }
     const copyText=() => {
-        let t=document.getElementById('exampleFormControlTextarea1');
-        t.select();
-        navigator.clipboard.writeText(t.value);
+        navigator.clipboard.writeText(text);
     }
     const clearText=() => {
         setText('');
